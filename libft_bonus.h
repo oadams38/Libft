@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: oadams <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/25 09:37:58 by oadams            #+#    #+#             */
-/*   Updated: 2020/11/25 09:37:58 by oadams           ###   ########.fr       */
+/*   Created: 2020/11/27 09:31:37 by oadams            #+#    #+#             */
+/*   Updated: 2020/11/27 09:31:39 by oadams           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ int					ft_putchar(int c);
 void				ft_putstr(char const *s);
 void				ft_putendl(char const *s);
 void				ft_putnbr(int n);
-char					*ft_readfile(char *path, int bs);
+char				*ft_readfile(char *path, int bs);
 void				*ft_realloc(void *ptr, size_t size);
 void				ft_memdel(void **ap);
 char				*ft_strnew(size_t size);

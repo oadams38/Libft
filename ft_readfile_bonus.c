@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: oadams <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/24 19:03:32 by oadams            #+#    #+#             */
-/*   Updated: 2020/11/24 19:03:32 by oadams           ###   ########.fr       */
+/*   Created: 2020/11/27 09:26:37 by oadams            #+#    #+#             */
+/*   Updated: 2020/11/27 09:31:10 by oadams           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_readfile(char *path, int bs)
 	ret = bs;
 	if ((fd = open(path, O_RDONLY)) < 0)
 		return (NULL);
-	while (ret == bs)
+	while (ret == bs && (len = 0) == 0)
 	{
 		if ((len += ret) && (ret = read(fd, buf, bs)) < 0)
 			return (NULL);
