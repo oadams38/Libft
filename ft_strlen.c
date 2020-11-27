@@ -6,7 +6,7 @@
 /*   By: oadams <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/27 09:28:21 by oadams            #+#    #+#             */
-/*   Updated: 2020/11/27 09:28:25 by oadams           ###   ########lyon.fr   */
+/*   Updated: 2020/11/27 10:34:41 by oadams           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,5 @@ size_t	ft_strlen(const char *s)
 	i = 0;
 	while (s[i])
 		i++;
-	return (i - 1);
+	return (i);
 }

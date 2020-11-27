@@ -6,7 +6,7 @@
 /*   By: oadams <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/27 09:25:25 by oadams            #+#    #+#             */
-/*   Updated: 2020/11/27 09:25:26 by oadams           ###   ########lyon.fr   */
+/*   Updated: 2020/11/27 09:52:28 by oadams           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 	psrc = src;
 	while (n--)
 	{
-		if ((*pdest++ = *psrc++) != (unsigned char)c)
+		if ((*pdest++ = *psrc++) == (unsigned char)c)
 			return (pdest);
 	}
 	return (NULL);
